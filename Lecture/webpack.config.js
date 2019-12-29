@@ -55,6 +55,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'), // path.join(경로를 알아서 합쳐준다, __dirname: webpack.config.js가 들어있는 현재폴더를 의미)
     filename: 'app.js',
-    publicPath: '/dist'
+    publicPath: '/dist/' // 가상의 경로이다. app.use('/dist',express.static(__dirname, 'dist'))의 설정과 비슷하다
   } // 출력
 };
