@@ -54,6 +54,7 @@ module.exports = {
   */
   output: {
     path: path.join(__dirname, 'dist'), // path.join(경로를 알아서 합쳐준다, __dirname: webpack.config.js가 들어있는 현재폴더를 의미)
-    filename: 'app.js'
+    filename: 'app.js',
+    publicPath: '/dist'
   } // 출력
 };

@@ -47,7 +47,7 @@ class WordRelay extends Component {
             onChange={this.onChangeInput}
           />
           <button>우와 짱이다!!</button>
-          <div>우와dddfdfd</div>
+          <div>우와 자동으로 바뀌어요dddddddd</div>
         </form>
         <div>{this.state.result}</div>
       </>
