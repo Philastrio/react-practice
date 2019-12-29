@@ -1,5 +1,6 @@
 const React = require('react');
 const { Component } = React;
+const { hot } = require('react-hot-loader/root');
 
 class WordRelay extends Component {
   constructor(props) {
@@ -45,7 +46,8 @@ class WordRelay extends Component {
             value={this.state.value}
             onChange={this.onChangeInput}
           />
-          <button>입력!!!!</button>
+          <button>우와 짱이다!!</button>
+          <div>우와dddfdfd</div>
         </form>
         <div>{this.state.result}</div>
       </>
@@ -53,4 +55,4 @@ class WordRelay extends Component {
   }
 }
 
-module.exports = WordRelay;
+module.exports = hot(WordRelay);

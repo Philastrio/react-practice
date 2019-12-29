@@ -1,9 +1,6 @@
 const React = require('react');
 const ReactDom = require('react-dom');
-const { hot } = require('react-hot-loader/root');
 
-const WordRelay = require('./02_WordRealy/WordRelay');
-
-const Hot = hot(WordRelay);
+const Hot = require('./02_WordRealy/WordRelay');
 
 ReactDom.render(<Hot />, document.querySelector('#root'));
