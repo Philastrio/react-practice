@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { hot } from 'react-hot-loader/root';
+import { hot } from 'react-hot-loader';
 
-import NumberBaseball from './Lecture/02_WordRealy/WordRelay';
+import NumberBaseball from './NumberBaseBall/NumberBaseballClass';
 
-const Hot = hot(NumberBaseball);
-
+const Hot = hot(module)(NumberBaseball);
 ReactDOM.render(<Hot />, document.querySelector('#root'));

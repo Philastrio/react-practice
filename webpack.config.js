@@ -1,8 +1,9 @@
 const path = require('path');
+process.env.NODE_ENV = 'production'; // 실서비스를 위해서는 이것을 일단 추가해야 한다.
 
 module.exports = {
   name: 'number-baseball-dev',
-  mode: 'development',
+  mode: 'development', // 실서비스 production
   devtool: 'eval',
   resolve: {
     extensions: ['.js', '.jsx']
