@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader';
 
-import Ball from './Lotto/LottoHooks';
+import TicTacToe from './TicTac/TicTacToe';
 
-const Hot = hot(module)(Ball);
+const Hot = hot(module)(TicTacToe);
 ReactDOM.render(<Hot />, document.querySelector('#root'));
